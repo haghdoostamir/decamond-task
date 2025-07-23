@@ -1,0 +1,25 @@
+.topbar {
+  width: 100%;
+  background-color: #444;
+  height: 60px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .userBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      border-radius: 50px;
+    }
+    .name {
+      font-weight: 700;
+    }
+    .location {
+      font-size: small;
+      color: #ddd;
+    }
+  }
+}

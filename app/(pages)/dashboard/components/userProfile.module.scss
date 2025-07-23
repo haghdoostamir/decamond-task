@@ -1,0 +1,105 @@
+
+.profileCard {
+  font-family: 'Vazir', sans-serif;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.2rem 1.5rem 1.8rem 1.5rem;
+  box-shadow: 0 2px 32px 0 rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin: 2rem auto;
+  transition: box-shadow 0.2s;
+  direction: ltr;
+
+  &:hover {
+    box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  .profilePicWrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 92px;
+    height: 92px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 1px 10px 0 #eee;
+
+    .profilePic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .userName {
+    font-weight: 700;
+    font-size: 1.35rem;
+    margin-bottom: 0.35rem;
+    color: #232323;
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+
+  .userMeta {
+    display: flex;
+    gap: 0.85em;
+    font-size: 0.98em;
+    color: #909090;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .contactBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+
+    .infoRow {
+      display: flex;
+      align-items: center;
+      gap: 0.65em;
+      background: #f8f8fa;
+      padding: 0.57em 1em;
+      border-radius: 8px;
+      color: #444;
+      font-size: 0.96em;
+      text-decoration: none;
+
+      span:first-child {
+        font-size: 1.1em;
+      }
+
+      &:hover {
+        background: #f1f3f6;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    max-width: 95vw;
+    padding: 1.3rem 0.5rem 1.2rem 0.5rem;
+
+    .profilePicWrapper {
+      width: 70px;
+      height: 70px;
+    }
+
+    .userName {
+      font-size: 1.02rem;
+    }
+
+    .userMeta {
+      font-size: 0.92rem;
+    }
+  }
+}

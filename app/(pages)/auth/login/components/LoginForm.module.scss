@@ -1,0 +1,31 @@
+.formBox {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 24px 0 #00000006;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 400px;
+
+  .title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .errorMsg {
+    color: #e74c3c;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginContainer {
+    max-width: 100vw;
+    .formBox {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}

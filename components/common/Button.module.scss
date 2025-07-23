@@ -1,0 +1,66 @@
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  font-family: "Vazir", sans-serif !important;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &.primary {
+    background: #0070f3;
+    color: #fff;
+
+    &:hover:enabled {
+      background: #0059c1;
+    }
+  }
+
+  &.secondary {
+    background: #fff;
+    color: #0070f3;
+    border: 1px solid #0070f3;
+
+    &:hover:enabled {
+      background: #f8f8ff;
+      color: #0059c1;
+      border-color: #0059c1;
+    }
+  }
+
+  .loader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    font-size: 1rem;
+
+    .spinner {
+      width: 1em;
+      height: 1em;
+      border: 2px solid #ccc;
+      border-top: 2px solid #0070f3;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: inline-block;
+    }
+
+    .loadingText {
+      font-size: 0.95em;
+    }
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
